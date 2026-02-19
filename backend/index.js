@@ -33,24 +33,26 @@ async function loadInitialData() {
 
 loadInitialData();
 
-/* ================= API ================= */
-app.get("/progress", (req, res) => {
-  if (!latestData) {
-    return res.status(503).json({
-      message: "Stats loading..."
-    });
+/* ================= API: PROGRESS ================= */
+app.get("/progress", async (req, res) => {
+  try {
+    // Fetch fresh data on every request
+    const data = await fetchLeetcodeData(USERNAME);
+    latestData = data; // Update cached data
+    res.json(data);
+  } catch (err) {
+    console.log("Error fetching progress:", err);
+    res.status(500).json({ message: "Error fetching progress" });
   }
-
-  res.json(latestData);
 });
 
-/* ================= CALENDAR ================= */
+/* ================= API: CALENDAR ================= */
 app.get("/calendar/:username", async (req, res) => {
   try {
     const data = await getCalendar(req.params.username);
     res.json(data);
   } catch (err) {
-    console.log(err);
+    console.log("Error fetching calendar:", err);
     res.status(500).send("Error fetching calendar");
   }
 });
@@ -60,20 +62,29 @@ cron.schedule("*/5 * * * *", async () => {
   console.log(`Updating LeetCode stats for ${USERNAME}...`);
   try {
     latestData = await fetchLeetcodeData(USERNAME);
-    io.emit("progressUpdate", latestData);
-    console.log("✅ Stats updated");
+    io.emit("progressUpdate", latestData); // Emit to all connected clients
+    console.log("✅ Stats updated via cron");
   } catch (err) {
     console.log("Cron update failed:", err);
   }
 });
 
-io.on("connection", () => {
+/* ================= SOCKET.IO CONNECTION ================= */
+io.on("connection", (socket) => {
   console.log("User connected");
+
+  // Send latest data immediately upon connection
+  if (latestData) {
+    socket.emit("progressUpdate", latestData);
+  }
+
+  socket.on("disconnect", () => {
+    console.log("User disconnected");
+  });
 });
 
-// ✅ use PORT from env with fallback
+/* ================= SERVER ================= */
 const PORT = process.env.PORT || 5000;
-
 server.listen(PORT, () =>
   console.log(`🚀 Server running on port ${PORT}`)
 );

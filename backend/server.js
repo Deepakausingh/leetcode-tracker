@@ -2,7 +2,7 @@ const express = require("express");
 const http = require("http");
 const cors = require("cors");
 const cron = require("node-cron");
-require("dotenv").config(); // ✅ load env variables
+require("dotenv").config(); // Load environment variables
 
 const { fetchLeetcodeData } = require("./services/leetcodeService");
 const getCalendar = require("./services/leetcodeCalendarService");
@@ -18,9 +18,9 @@ const io = require("socket.io")(server, {
 // ✅ fetch username from env
 const USERNAME = process.env.LEETCODE_USERNAME || "defaultUsername"; 
 
-let latestData = null; // ✅ start as null
+let latestData = null; // Cache for progress
 
-/* ================= LOAD DATA IMMEDIATELY ================= */
+/* ================= INITIAL DATA LOAD ================= */
 async function loadInitialData() {
   try {
     console.log(`Fetching initial LeetCode stats for ${USERNAME}...`);
@@ -33,47 +33,58 @@ async function loadInitialData() {
 
 loadInitialData();
 
-/* ================= API ================= */
-app.get("/progress", (req, res) => {
-  if (!latestData) {
-    return res.status(503).json({
-      message: "Stats loading..."
-    });
+/* ================= API: PROGRESS ================= */
+app.get("/progress", async (req, res) => {
+  try {
+    // Fetch fresh data on request
+    const data = await fetchLeetcodeData(USERNAME);
+    latestData = data; // Update cache
+    res.json(data);
+  } catch (err) {
+    console.log("Error fetching progress:", err);
+    res.status(500).json({ message: "Error fetching progress" });
   }
-
-  res.json(latestData);
 });
 
-/* ================= CALENDAR ================= */
+/* ================= API: CALENDAR ================= */
 app.get("/calendar/:username", async (req, res) => {
   try {
     const data = await getCalendar(req.params.username);
     res.json(data);
   } catch (err) {
-    console.log(err);
+    console.log("Error fetching calendar:", err);
     res.status(500).send("Error fetching calendar");
   }
 });
 
-/* ================= REALTIME UPDATE ================= */
+/* ================= REAL-TIME UPDATES ================= */
 cron.schedule("*/5 * * * *", async () => {
   console.log(`Updating LeetCode stats for ${USERNAME}...`);
   try {
     latestData = await fetchLeetcodeData(USERNAME);
-    io.emit("progressUpdate", latestData);
-    console.log("✅ Stats updated");
+    io.emit("progressUpdate", latestData); // emit to all connected clients
+    console.log("✅ Stats updated via cron");
   } catch (err) {
     console.log("Cron update failed:", err);
   }
 });
 
-io.on("connection", () => {
+/* ================= SOCKET.IO CONNECTION ================= */
+io.on("connection", (socket) => {
   console.log("User connected");
+
+  // Send latest progress immediately on connection
+  if (latestData) {
+    socket.emit("progressUpdate", latestData);
+  }
+
+  socket.on("disconnect", () => {
+    console.log("User disconnected");
+  });
 });
 
-// ✅ use PORT from env with fallback
+/* ================= SERVER ================= */
 const PORT = process.env.PORT || 5000;
-
 server.listen(PORT, () =>
   console.log(`🚀 Server running on port ${PORT}`)
 );
