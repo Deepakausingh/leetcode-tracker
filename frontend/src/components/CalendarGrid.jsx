@@ -220,7 +220,7 @@ export default function CalendarGrid({ calendar = {} }) {
             Submissions: {panelData.count}
           </p>
 
-          <div className="space-y-2 max-h-[180px] overflow-y-auto">
+          <div className="space-y-2 max-h-[180px] overflow-y-auto custom-scroll">
 
             {panelData.questions.length === 0 ? (
               <p className="text-gray-500 text-sm">

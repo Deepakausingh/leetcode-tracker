@@ -56,3 +56,41 @@ code {
   display: flex;
   flex-direction: column;
 }
+
+.custom-scroll {
+  scrollbar-width: thin;               /* Firefox */
+  scrollbar-color: #22c55e #0b0f14;    /* thumb + track */
+}
+
+/* Chrome, Edge, Safari */
+.custom-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #0b0f14;
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    #14532d,
+    #22c55e
+  );
+  border-radius: 10px;
+  border: 2px solid #0b0f14;
+  transition: all 0.3s ease;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    #16a34a,
+    #4ade80
+  );
+}
+
+.custom-scroll::-webkit-scrollbar-corner {
+  background: transparent;
+}

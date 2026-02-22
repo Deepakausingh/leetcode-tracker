@@ -118,5 +118,23 @@
       "name": "5. Divide Two Integers",
       "link": "https://leetcode.com/problems/divide-two-integers/submissions/1925894054/"
     }
-  ]
+  ],
+    "2026-02-22": [
+      {
+        "name": "1. Combination Sum II",
+        "link": "https://leetcode.com/problems/combination-sum-ii/submissions/1927619150/"
+      },
+      {
+        "name": "2. First missing positive",
+        "link": "https://leetcode.com/problems/first-missing-positive/submissions/1927621000/"
+      },
+      {
+        "name": "3. Permutations",
+        "link": "https://leetcode.com/problems/permutations/submissions/1927623183/"
+      },
+      {
+        "name": "4. Permutations II",
+        "link": "https://leetcode.com/problems/permutations-ii/submissions/1927625235/"
+      }
+    ]
 }
