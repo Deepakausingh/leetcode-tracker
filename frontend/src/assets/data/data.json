@@ -136,5 +136,20 @@
         "name": "4. Permutations II",
         "link": "https://leetcode.com/problems/permutations-ii/submissions/1927625235/"
       }
+    ],
+    "2026-02-25": [
+      {
+        "name": "1. Valid Parentheses",
+        "link": "https://leetcode.com/problems/valid-parentheses/submissions/1930352149/"
+      },
+      {
+        "name": "2. Merge Two Sorted Lists",
+        "link": "https://leetcode.com/problems/merge-two-sorted-lists/submissions/1930354984/"
+      },
+      {
+        "name": "3. Generate Parentheses",
+        "link": "https://leetcode.com/problems/generate-parentheses/submissions/1930362861/"
+      }
     ]
+
 }
