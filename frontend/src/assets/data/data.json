@@ -150,6 +150,17 @@
         "name": "3. Generate Parentheses",
         "link": "https://leetcode.com/problems/generate-parentheses/submissions/1930362861/"
       }
+    ],
+    "2026-02-27": [
+      {
+        "name": "1. Merge k Sorted Lists",
+        "link": "https://leetcode.com/submissions/detail/1932984355/"
+      },
+      {
+        "name": "2. Length of Last Word",
+        "link": "https://leetcode.com/problems/length-of-last-word/submissions/1932987357/"
+      }
     ]
 
 }
+
