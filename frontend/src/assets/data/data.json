@@ -160,6 +160,24 @@
         "name": "2. Length of Last Word",
         "link": "https://leetcode.com/problems/length-of-last-word/submissions/1932987357/"
       }
+    ],
+    "2026-03-05": [
+      {
+        "name": "1. Count and Say",
+        "link": "https://leetcode.com/submissions/detail/1938675584/"
+      },
+      {
+        "name": "2. Trapping Rain Water",
+        "link": "https://leetcode.com/submissions/detail/1938688208/"
+      },
+      {
+        "name": "3. wildcard matching",
+        "link": "https://leetcode.com/submissions/detail/1938699409/"
+      },
+      {
+        "name": "4. Jump Game II",
+        "link": "https://leetcode.com/submissions/detail/1938703257/"
+      }
     ]
 
 }
