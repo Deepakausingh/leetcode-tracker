@@ -178,6 +178,34 @@
         "name": "4. Jump Game II",
         "link": "https://leetcode.com/submissions/detail/1938703257/"
       }
+    ],
+    "2026-03-06": [
+      {
+        "name": "1. plus one",
+        "link": "https://leetcode.com/submissions/detail/1939361770/"
+      },
+      {
+        "name": "2. Add Binary",
+        "link": "https://leetcode.com/submissions/detail/1939374310/"
+      }
+    ],
+    "2026-03-09": [
+      {
+        "name": "1. Pow(x, n)",
+        "link": "https://leetcode.com/submissions/detail/1940371078/"
+      },
+      {
+        "name": "2. Permutation Sequence",
+        "link": "https://leetcode.com/submissions/detail/1940382826/"
+      },
+      {
+        "name": "3. Unique Paths",
+        "link": "https://leetcode.com/submissions/detail/1940389818/"
+      },
+      {
+        "name": "4. Sqrt(x)",
+        "link": "https://leetcode.com/submissions/detail/1940392862/"
+      }
     ]
 
 }
