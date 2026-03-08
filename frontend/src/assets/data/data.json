@@ -206,6 +206,20 @@
         "name": "4. Sqrt(x)",
         "link": "https://leetcode.com/submissions/detail/1940392862/"
       }
+    ],
+    "2026-03-08": [
+      {
+        "name": "1. Maximum Subarray",
+        "link": "https://leetcode.com/submissions/detail/1941504682/"
+      },
+      {
+        "name": "2. Jump Game",
+        "link": "https://leetcode.com/submissions/detail/1941559284/"
+      },
+      {
+        "name": "3. Merge Intervals",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      }
     ]
 
 }
