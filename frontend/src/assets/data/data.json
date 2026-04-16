@@ -220,7 +220,254 @@
         "name": "3. Merge Intervals",
         "link": "https://leetcode.com/submissions/detail/1941572806/"
       }
-    ]
+    ],
+    "2026-03-11": [
+      {
+        "name": "1. Gray Code",
+        "link": "https://leetcode.com/submissions/detail/1941504682/"
+      },
+      {
+        "name": "2. Unique Binary Search Trees",
+        "link": "https://leetcode.com/submissions/detail/1941559284/"
+      },
+      {
+        "name": "3. Merge Intervals",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      }
+    ],
+    "2026-03-12": [
+      {
+        "name": "1. Rotated Array",
+        "link": "https://leetcode.com/submissions/detail/1941504682/"
+      },
+      {
+        "name": "2. Count Primes",
+        "link": "https://leetcode.com/submissions/detail/1941559284/"
+      }
+    ],
+    "2026-03-13": [
+      {
+        "name": "1. Fraction to Recurring Decimal",
+        "link": "https://leetcode.com/submissions/detail/1941504682/"
+      }
+    ],
+    "2026-03-16": [
+      {
+        "name": "1. Power of Two",
+        "link": "https://leetcode.com/submissions/detail/1941559284/"
+      },
+      {
+        "name": "2. Rectangle Area",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      }
+    ],
+    "2026-03-18": [
+      {
+        "name": "1. Pascal's Triangle",
+        "link": "https://leetcode.com/submissions/detail/1941504682/"
+      }
+    ],
+    "2026-03-21": [
+      {
+        "name": "1. find the index of the first occurrence in a string",
+        "link": "https://leetcode.com/submissions/detail/1941559284/"
+      },
+      {
+        "name": "2. Swap Nodes in Pairs",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      }
+    ],
+    "2026-03-22": [
+      {
+        "name": "1. Valid Number",
+        "link": "https://leetcode.com/submissions/detail/1941504682/"
+      }
+    ],
+    "2026-03-24": [
+      {
+        "name": "1. Basic Calculator",
+        "link": "https://leetcode.com/submissions/detail/1941559284/"
+      }
+    ],
+    "2026-03-25": [
+      {
+        "name": "1. Number of Digit One",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      }
+    ],
+    "2026-03-26": [
+      {
+        "name": "1. Spiral Matrix",
+        "link": "https://leetcode.com/submissions/detail/1941504682/"
+      }
+    ],
+    "2026-03-27": [
+      {
+        "name": "1. Insert Interval",
+        "link": "https://leetcode.com/submissions/detail/1941559284/"
+      },
+      {
+        "name": "2. Remove Nth Node From End of List",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      }
+    ],
+    "2026-03-28": [
+      {
+        "name": "1. Add Digits",
+        "link": "https://leetcode.com/submissions/detail/1941504682/"
+      }
+    ],
+    "2026-03-29": [
+      {
+        "name": "1. First Matching Charecter From Both Ends",
+        "link": "https://leetcode.com/submissions/detail/1941559284/"
+      },
+      {
+        "name": "2. Design Event Manager",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      },
+      {
+        "name": "3. Sum of Sortable Integers",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      },
+      {
+        "name": "4. Incremental Even-Weighted Cycle Queries",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      },
+      {
+        "name": "5. Perfect Squares",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      }
+      
+    ],
+    "2026-03-31": [
+      {
+        "name": "1. Minimum Path Sum",
+        "link": "https://leetcode.com/submissions/detail/1941504682/"
+      }
+    ],
+    "2026-04-02": [
+      {
+        "name": "1. Medium of Two Sorted Arrays",
+        "link": "https://leetcode.com/submissions/detail/1941559284/"
+      },
+      {
+        "name": "2. Power of three",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      }
+    ],
+    "2026-04-03": [
+      {
+        "name": "1. Power of three",
+        "link": "https://leetcode.com/submissions/detail/1941504682/"
+      },
+      {
+        "name": "2. Power of four",
+        "link": "https://leetcode.com/submissions/detail/1941559284/"
+      },
+      {
+        "name": "3. Valid Perfect Square",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      }
+    ],
+    "2026-04-04": [
+      {
+        "name": "1. Climbing Stairs",
+        "link": "https://leetcode.com/submissions/detail/1941504682/"
+      },
+      {
+        "name": "2. Remove Duplicates from Sorted Array",
+        "link": "https://leetcode.com/submissions/detail/1941559284/"
+      },
+      {
+        "name": "3. Roteted List",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      }
+    ],
+    "2026-04-05": [
+      {
+        "name": "1. Missing Number",
+        "link": "https://leetcode.com/submissions/detail/1941504682/"
+      }
+    ],
+    "2026-04-06": [
+      {
+        "name": "1. Basic Calculator II",
+        "link": "https://leetcode.com/submissions/detail/1941559284/"
+      },
+      {
+        "name": "2. Binary Tree Inorder Traversal",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      },
+      {
+        "name": "3. Same Tree",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      }
+    ],
+    "2026-04-07": [
+      {
+        "name": "1. Simplify Path",
+        "link": "https://leetcode.com/submissions/detail/1941504682/"
+      }
+    ],
+    "2026-04-08": [
+      {
+        "name": "1. Edit Distance",
+        "link": "https://leetcode.com/submissions/detail/1941559284/"
+      },
+      {
+        "name": "2. Set Matrix Zeroes",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      }
+    ],
+    "2026-04-11": [
+      {
+        "name": "1. Unique Paths II",
+        "link": "https://leetcode.com/submissions/detail/1941504682/"
+      }
+    ],
+    "2026-04-12": [
+      {
+        "name": "1. Spiral Matrix",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      }
+    ],
+    "2026-04-13": [
+      {
+        "name": "1. Ugly Number",
+        "link": "https://leetcode.com/submissions/detail/1941504682/"
+      }
+    ],
+    "2026-04-14": [
+      {
+        "name": "1. Search a 2D Matrix",
+        "link": "https://leetcode.com/submissions/detail/1941559284/"
+      },
+      {
+        "name": "2. Reverse Nodes in k-Group",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      }
 
+    ],
+    "2026-04-15": [
+      {
+        "name": "1. N-Queens",
+        "link": "https://leetcode.com/submissions/detail/1941504682/"
+      }
+    ],
+    "2026-04-16": [
+      {
+        "name": "1. Longest Valid Parentheses",
+        "link": "https://leetcode.com/submissions/detail/1941559284/"
+      },
+      {
+        "name": "2. Group Anagrams",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      },
+      {
+        "name": "3. Substring with Concatenation of All Words",
+        "link": "https://leetcode.com/submissions/detail/1941572806/"
+      }
+    ]
 }
 
